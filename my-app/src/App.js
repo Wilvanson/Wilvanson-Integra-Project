@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, Switch} from 'react-router-dom';
 import CrashPage from './components/404page';
 
 function App() {
