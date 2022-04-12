@@ -187,69 +187,69 @@ for recs in records:
     lstatR = recs['LSTAT']
     medvR = recs['MEDV']
 
-    if crimR > crimMax:
+    if  crimR != 'NA' and crimR > crimMax:
         crimMax = crimR
-    elif crimR < crimMin:
+    elif crimR != 'NA' and crimR < crimMin:
         crimMin = crimR
     
-    if znR > znMax:
+    if znR != 'NA' and znR > znMax:
         znMax = znR
-    elif znR < znMin:
+    elif znR != 'NA' and znR < znMin:
         znMin = znR
     
-    if indusR > indusMax:
+    if indusR != 'NA' and indusR > indusMax:
         indusMax = indusR
-    elif indusR < indusMin:
+    elif indusR != 'NA' and indusR < indusMin:
         indusMin = indusR
     
-    if chasR > chasMax:
+    if chasR != 'NA' and chasR > chasMax:
         chasMax = chasR
-    elif chasR < chasMin:
+    elif chasR != 'NA' and chasR < chasMin:
         chasMin = chasR
     
-    if noxR > noxMax:
+    if noxR != 'NA' and noxR > noxMax:
         noxMax = noxR
-    elif noxR < noxMin:
+    elif noxR != 'NA' and noxR < noxMin:
         noxMin = noxR
     
-    if rmR > rmMax:
+    if rmR != 'NA' and rmR > rmMax:
         rmMax = rmR
-    elif rmR < rmMin:
+    elif rmR != 'NA' and rmR < rmMin:
         rmMin = rmR
     
-    if ageR > ageMax:
+    if ageR != 'NA' and ageR > ageMax:
         ageMax = ageR
-    elif ageR < ageMin:
+    elif ageR != 'NA' and ageR < ageMin:
         ageMin = ageR
     
-    if disR > disMax:
+    if disR != 'NA' and disR > disMax:
         disMax = disR
-    elif disR < disMin:
+    elif disR != 'NA' and disR < disMin:
         disMin = disR
     
-    if radR > radMax:
+    if radR != 'NA' and radR > radMax:
         radMax = radR
-    elif radR < radMin:
+    elif radR != 'NA' and radR < radMin:
         radMin = radR
     
-    if taxR > taxMax:
+    if taxR != 'NA' and taxR > taxMax:
         taxMax = taxR
-    elif taxR < taxMin:
+    elif taxR != 'NA' and taxR < taxMin:
         taxMin = taxR
     
-    if ptratioR > ptratioMax:
+    if ptratioR != 'NA' and ptratioR > ptratioMax:
         ptratioMax = ptratioR
-    elif ptratioR < ptratioMin:
+    elif ptratioR != 'NA' and ptratioR < ptratioMin:
         ptratioMin = ptratioR
     
-    if lstatR > lstatMax:
+    if lstatR != 'NA' and lstatR > lstatMax:
         lstatMax = lstatR
-    elif lstatR < lstatMin:
+    elif lstatR != 'NA' and lstatR < lstatMin:
         lstatMin = lstatR
     
-    if medvR > medvMax:
+    if medvR != 'NA' and medvR > medvMax:
         medvMax = medvR
-    elif medvR < medvMin:
+    elif medvR != 'NA' and medvR < medvMin:
         medvMin = medvR
 
 
@@ -289,3 +289,4 @@ print('\n')
 print(min)
 print('\n')
 print(max)
+
