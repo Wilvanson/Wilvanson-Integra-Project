@@ -118,23 +118,6 @@ def dataBase():
         else:
             lentMedv -= 1
 
-    # avg = {
-    #     'CRIM': crim / lentCrim,
-    #     'ZN': zn / lentZn,
-    #     'INDUS': indus / lentIndus,
-    #     'CHAS': chas / lentChas,
-    #     'NOX': nox / lentNox,
-    #     'RM': rm / lentRm,
-    #     'AGE': age / lentAge,
-    #     'DIS': dis / lentDis,
-    #     'RAD': rad / lentRad,
-    #     'TAX': tax / lentTax,
-    #     'PTRATIO': ptratio / lentPtratio,
-    #     'LSTAT': lstat / lentLstat,
-    #     'MEDV': medv / lentMedv
-    # }
-
-    # print(avg)
 
     # find the Min and Max for each column 
 
@@ -253,37 +236,6 @@ def dataBase():
             medvMin = medvR
 
 
-    # min = {
-    #     'CRIM': crimMin,
-    #     'ZN': znMin,
-    #     'INDUS': indusMin,
-    #     'CHAS': chasMin,
-    #     'NOX': noxMin,
-    #     'RM': rmMin,
-    #     'AGE': ageMin,
-    #     'DIS': disMin,
-    #     'RAD': radMin,
-    #     'TAX': taxMin,
-    #     'PTRATIO': ptratioMin,
-    #     'LSTAT': lstatMin,
-    #     'MEDV': medvMin
-    # }
-
-    # max = {
-    #     'CRIM': crimMax,
-    #     'ZN': znMax,
-    #     'INDUS': indusMax,
-    #     'CHAS': chasMax,
-    #     'NOX': noxMax,
-    #     'RM': rmMax,
-    #     'AGE': ageMax,
-    #     'DIS': disMax,
-    #     'RAD': radMax,
-    #     'TAX': taxMax,
-    #     'PTRATIO': ptratioMax,
-    #     'LSTAT': lstatMax,
-    #     'MEDV': medvMax
-    # }
 
     data = {
         'CRIM':{
@@ -353,6 +305,8 @@ def dataBase():
             }
     }
 
-    # print(data)
+    return data
 
-dataBase()
+# b = dataBase()
+
+# print(b)

@@ -1,10 +1,12 @@
 from flask import Blueprint, jsonify, request
-
+from data import dataBase
 data_routes = Blueprint('data', __name__)
 
 
 @data_routes.route('/')
-def data():
+def dataMine():
+    data = dataBase()
+
     
-    
-    return {}
+    return data
+
