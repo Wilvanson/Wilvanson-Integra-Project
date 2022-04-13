@@ -304,6 +304,35 @@ def dataBase():
         if medvR != 'NA':
             medvArr.append(medvR)
         
+    medvCrim = []
+    medvPtratio = []
+    medvAge = []
+    for recs in records:
+        crimR = recs['CRIM']
+        znR = recs['ZN']
+        indusR = recs['INDUS']
+        chasR = recs['CHAS']
+        noxR = recs['NOX']
+        rmR = recs['RM']
+        ageR = recs['AGE']
+        disR = recs['DIS']
+        radR = recs['RAD']
+        taxR = recs['TAX']
+        ptratioR = recs['PTRATIO']
+        lstatR = recs['LSTAT']
+        medvR = recs['MEDV']
+
+        if crimR != 'NA' and medvR != 'NA':
+            medvCrim.append((medvR, crimR))
+        
+        if ptratioR != 'NA' and medvR != 'NA':
+            medvPtratio.append((medvR, ptratioR))
+
+        if ageR != 'NA' and medvR != 'NA':
+            medvAge.append((medvR, ageR))
+
+        
+
 
     data = {
         'CRIM':{
@@ -383,7 +412,10 @@ def dataBase():
             'MAX': medvMax,
             'MIN': medvMin,
             'RECORDS': medvArr
-            }
+            },
+        'ZYMEDVCRIM': medvCrim,
+        'ZYMEDVPTRATIO': medvPtratio,
+        'ZYMEDVAGE': medvAge
     }
 
     return data
