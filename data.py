@@ -234,74 +234,155 @@ def dataBase():
             medvMax = medvR
         elif medvR != 'NA' and medvR < medvMin:
             medvMin = medvR
+    
+    crimArr = []
+    znArr =  []
+    indusArr =  []
+    chasArr =  []
+    noxArr = [] 
+    rmArr =  []
+    ageArr =  []
+    disArr = [] 
+    radArr =  []
+    taxArr =  []
+    ptratioArr = [] 
+    lstatArr =  []
+    medvArr = []
 
+    for recs in records:
+        crimR = recs['CRIM']
+        znR = recs['ZN']
+        indusR = recs['INDUS']
+        chasR = recs['CHAS']
+        noxR = recs['NOX']
+        rmR = recs['RM']
+        ageR = recs['AGE']
+        disR = recs['DIS']
+        radR = recs['RAD']
+        taxR = recs['TAX']
+        ptratioR = recs['PTRATIO']
+        lstatR = recs['LSTAT']
+        medvR = recs['MEDV']
 
+        if crimR != 'NA':
+            crimArr.append(crimR)
+
+        if znR != 'NA':
+            znArr.append(znR)
+        
+        if indusR != 'NA':
+            indusArr.append(indusR)
+        
+        if chasR != 'NA':
+            chasArr.append(chasR)
+        
+        if noxR != 'NA':
+            noxArr.append(noxR)
+        
+
+        if rmR != 'NA':
+            rmArr.append(rmR)
+        
+        if ageR != 'NA':
+            ageArr.append(ageR)
+
+        if disR != 'NA':
+            disArr.append(disR)
+        
+        if radR != 'NA':
+            radArr.append(radR)
+        
+        if taxR != 'NA':
+            taxArr.append(taxR)
+        
+        if ptratioR != 'NA':
+            ptratioArr.append(ptratioR )
+        
+        if lstatR != 'NA':
+            lstatArr.append(lstatR)
+         
+        if medvR != 'NA':
+            medvArr.append(medvR)
+        
 
     data = {
         'CRIM':{
             'AVG': crim / lentCrim,
             'MAX': crimMax,
-            'MIN': crimMin
+            'MIN': crimMin,
+            'RECORDS': crimArr
             },
         'ZN':{
             'AVG': zn / lentZn,
             'MAX': znMax,
-            'MIN': znMin
+            'MIN': znMin,
+            'RECORDS': znArr
             },
         'INDUS':{
             'AVG': indus / lentIndus,
             'MAX': indusMax,
-            'MIN': indusMin
+            'MIN': indusMin,
+            'RECORDS': indusArr
             },
         'CHAS':{
             'AVG': chas / lentChas,
             'MAX': chasMax,
-            'MIN': chasMin
+            'MIN': chasMin,
+            'RECORDS': chasArr
             },
         'NOX':{
             'AVG': nox / lentNox,
             'MAX': noxMax,
-            'MIN': noxMin
+            'MIN': noxMin,
+            'RECORDS': noxArr
             },
         'RM':{
             'AVG': rm / lentRm,
             'MAX': rmMax,
-            'MIN': rmMin
+            'MIN': rmMin,
+            'RECORDS': rmArr
             },
         'AGE':{
             'AVG': age / lentAge,
             'MAX': ageMax,
-            'MIN': ageMin
+            'MIN': ageMin,
+            'RECORDS': ageArr
             },
         'DIS':{
             'AVG': dis / lentDis,
             'MAX': disMax,
-            'MIN': disMin
+            'MIN': disMin,
+            'RECORDS': disArr
             },
         'RAD':{
             'AVG': rad / lentRad,
             'MAX': radMax,
-            'MIN': radMin
+            'MIN': radMin,
+            'RECORDS': radArr
             },
         'TAX':{
             'AVG': tax / lentTax,
             'MAX': taxMax,
-            'MIN': taxMin
+            'MIN': taxMin,
+            'RECORDS': taxArr
             },
         'PTRATIO':{
             'AVG': ptratio / lentPtratio,
             'MAX': ptratioMax,
-            'MIN': ptratioMin
+            'MIN': ptratioMin,
+            'RECORDS': ptratioArr
             },
         'LSTAT':{
             'AVG': lstat / lentLstat,
             'MAX': lstatMax,
-            'MIN': lstatMin
+            'MIN': lstatMin,
+            'RECORDS': lstatArr
             },
         'MEDV':{
             'AVG': medv / lentMedv,
             'MAX': medvMax,
-            'MIN': medvMin
+            'MIN': medvMin,
+            'RECORDS': medvArr
             }
     }
 

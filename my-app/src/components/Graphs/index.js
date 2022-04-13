@@ -32,7 +32,7 @@ const GraphPage = () => {
       },[])
 
     //   console.log(items)
-
+    
     return (
       <div>
           <p>Hello</p>
@@ -42,6 +42,7 @@ const GraphPage = () => {
                 <p>AVG: {item['AVG']}</p>
                 <p>MAX: {item['MAX']}</p>
                 <p>MIN: {item['MIN']}</p>
+                <p>ARR: {item['RECORDS']}</p>
             </div>
           )}
           
