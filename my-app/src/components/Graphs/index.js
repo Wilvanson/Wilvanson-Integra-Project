@@ -39,19 +39,19 @@ const GraphPage = () => {
         title:{
             text: "Integra HousingData"
         },
-        axisY: {
-            title: "Points"
-        },
+        // axisY: {
+        //     title: "Points"
+        // },
         data: [{
             type: "boxAndWhisker",
             yValueFormatString: "#,##0.# \"kcal/100g\"",
             dataPoints: [
-                { label: items['for'],  y: items['RECORDS'] },
-                // { label: "Cake",  y: [252, 346, 409, 437, 374.5] },
-                // { label: "Biscuit",  y: [236, 281.5, 336.5, 428, 313] },
-                // { label: "Doughnut",  y: [340, 382, 430, 452, 417] },
-                // { label: "Pancakes",  y: [194, 224.5, 342, 384, 251] },
-                // { label: "Bagels",  y: [241, 255, 276.5, 294, 274.5] }
+                // { label: items[0]['for'],  y: items['RECORDS'] },
+                { label: "Cake",  y: [252, 346, 409, 437, 374.5] },
+                { label: "Biscuit",  y: [236, 281.5, 336.5, 428, 313] },
+                { label: "Doughnut",  y: [340, 382, 430, 452, 417] },
+                { label: "Pancakes",  y: [194, 224.5, 342, 384, 251] },
+                { label: "Bagels",  y: [241, 255, 276.5, 294, 274.5] }
             ]
         }]
     }
