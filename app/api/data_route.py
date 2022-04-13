@@ -6,7 +6,7 @@ data_routes = Blueprint('data', __name__)
 @data_routes.route('/')
 def dataMine():
     data = dataBase()
-
+    # print(data['CRIM']['MAX'])
     
     return data
 
