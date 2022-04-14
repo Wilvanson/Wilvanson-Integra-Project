@@ -419,7 +419,3 @@ def dataBase():
     }
 
     return data
-
-# b = dataBase()
-
-# print(b)
