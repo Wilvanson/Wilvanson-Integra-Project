@@ -323,13 +323,13 @@ def dataBase():
         medvR = recs['MEDV']
 
         if crimR != 'NA' and medvR != 'NA':
-            medvCrim.append((medvR, crimR))
+            medvCrim.append({'x': crimR, 'y': medvR})
         
         if ptratioR != 'NA' and medvR != 'NA':
-            medvPtratio.append((medvR, ptratioR))
+            medvPtratio.append({'x': ptratioR, 'y': medvR})
 
         if ageR != 'NA' and medvR != 'NA':
-            medvAge.append((medvR, ageR))
+            medvAge.append({'x': ageR, 'y': medvR})
 
         
 
