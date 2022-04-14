@@ -38,14 +38,14 @@ const MedvAgePage = () => {
         exportEnabled: true,
         theme: "light2", // "light1", "dark1", "dark2"
         title:{
-            text: "Bounce Rate by Week of Year"
+            text: "Integra HousingData"
         },
         axisY: {
-            title: "Bounce Rate",
+            title: "median value of the house",
             suffix: "%"
         },
         axisX: {
-            title: "Week of Year",
+            title: "Age",
             prefix: "W",
             interval: 2
         },
