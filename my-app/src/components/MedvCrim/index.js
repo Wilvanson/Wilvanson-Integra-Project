@@ -9,7 +9,7 @@ const MedvCrimPage = () => {
     const [dataPoint, setDataPoints] = useState([])
 
     const getGraph = async () => {
-        const response = await fetch(`http://127.0.0.1:5000/api/data/medvCrim`);
+        const response = await fetch(`/api/data/medvCrim`);
 
         
         if (response.ok) {

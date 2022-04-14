@@ -9,7 +9,7 @@ const GraphPage = () => {
     const [dataPoint, setDataPoints] = useState([])
 
     const getGraph = async () => {
-        const response = await fetch(`http://localhost:5000/api/data/`);
+        const response = await fetch(`/api/data/`);
         
         if (response.ok) {
           let list = await response.json();
