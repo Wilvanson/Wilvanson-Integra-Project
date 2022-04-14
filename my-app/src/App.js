@@ -5,6 +5,7 @@ import GraphPage from './components/Graphs';
 import MedvCrimPage from './components/MedvCrim';
 import MedvAgePage from './components/MedvAge';
 import MedvPtratioPage from './components/MedvPtratio';
+import NavBar from './components/NavBar';
 
 function App() {
 
@@ -13,8 +14,9 @@ function App() {
   
 
   return (
-    // <div>Hello World</div>
+    
     <BrowserRouter>
+      <NavBar />
       <Switch>
         <Route path='/' exact>
           <GraphPage />
