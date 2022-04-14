@@ -58,7 +58,7 @@ const GraphPage = () => {
     
     
     return (
-      <div>
+      <div className='charts'>
           <p>Hello</p>
           {/* {items.map((item) =>
             <div>

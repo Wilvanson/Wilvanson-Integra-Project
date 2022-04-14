@@ -15,3 +15,32 @@ code {
 .main{
   display: flex;
 }
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(129, 121, 121);
+  height: 70px;
+  border-radius: 3rem;
+}
+
+.navbar li{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 400;
+  font-size: 16px;
+  display: inline-block;
+  padding: 0px 20px;
+  list-style: none;
+  align-items: center;
+}
+
+.links{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.charts{
+  padding: 20px 20px 20px 20px;
+}

@@ -22,7 +22,7 @@ const MedvPtratioPage = () => {
         //     //   obj[key] = list[key]
         //       arr.push(obj)
         //   }
-          return list
+          return list['data']
 
         }else{
           throw new Error(`${response.status}`)
@@ -82,7 +82,7 @@ const MedvPtratioPage = () => {
     
     
     return (
-      <div>
+      <div className='charts'>
           <p>Hello</p>
           {/* {items.map((item) =>
             <div>
