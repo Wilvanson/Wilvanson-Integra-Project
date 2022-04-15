@@ -24,9 +24,7 @@ COPY . .
 COPY --from=build-stage /my-app/build/* app/static/
 
 # Install Python Dependencies
-RUN pip install flask-cors
-RUN pip install flask
-RUN pip install gspread
+RUN pip install -r requirements.txt
 
 # Run flask environment
 CMD gunicorn app:app
