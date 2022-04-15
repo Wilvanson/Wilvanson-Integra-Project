@@ -29,4 +29,4 @@ RUN pip install flask
 RUN pip install gspread
 
 # Run flask environment
-# CMD gunicorn app:app
+CMD gunicorn app:app
