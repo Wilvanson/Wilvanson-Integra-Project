@@ -16,11 +16,15 @@ code {
   display: flex;
 }
 
+body{
+  background-color: rgb(129, 121, 121);
+}
+
 .navbar{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(129, 121, 121);
+  background-color: rgb(7, 100, 31);
   height: 70px;
   border-radius: 3rem;
 }
