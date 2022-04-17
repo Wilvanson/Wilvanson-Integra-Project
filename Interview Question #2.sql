@@ -45,13 +45,27 @@ INSERT INTO reservations (nights, package, roomID, guestID) VALUES
 (3, 'GOLD', 1, 3),
 (1, 'STUDENT', 3, 5);
 
--- Query for avaliable rooms & pull up guest information in a room
+-- Query for avaliable rooms 
 
 SELECT *
 FROM rooms
 WHERE rooms.availble = TRUE;
 
+
+-- pull up guest information in a room
+
 SELECT guest.name, roomID
 FROM reservations
 INNER JOIN guests ON (reservations.guestID = guests.id)
 ORDER BY guest.name;
+
+
+-- guest checkout
+
+UPDATE rooms
+SET availble = TRUE
+WHERE id = 3;
+
+DELETE
+FROM reservations
+WHERE roomID = 3;
