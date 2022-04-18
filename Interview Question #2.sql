@@ -54,7 +54,7 @@ WHERE rooms.availble = TRUE;
 
 -- pull up guest information in a room
 
-SELECT guest.name, roomID
+SELECT guests.name, roomID
 FROM reservations
 INNER JOIN guests ON (reservations.guestID = guests.id)
 ORDER BY guest.name;
