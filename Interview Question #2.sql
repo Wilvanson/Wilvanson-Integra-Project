@@ -57,7 +57,7 @@ WHERE rooms.availble = TRUE;
 SELECT guests.name, roomID
 FROM reservations
 INNER JOIN guests ON (reservations.guestID = guests.id)
-ORDER BY guest.name;
+ORDER BY guests.name;
 
 
 -- guest checkout
